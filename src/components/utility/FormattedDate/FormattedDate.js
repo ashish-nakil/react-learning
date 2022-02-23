@@ -1,6 +1,6 @@
 import './FormattedDate.css';
 
-function FormattedDate(props)
+const FormattedDate = (props) =>
 {
     const day = props.date.toLocaleString('en-US', {month:'long'});
     const month = props.date.toLocaleString('en-US', {day:'2-digit'});

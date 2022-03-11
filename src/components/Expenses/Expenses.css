@@ -5,3 +5,8 @@
     width: 50rem;
     max-width: 95%;
   }
+
+  .no-record-text {
+    color: white;
+    padding: 0 1rem;
+  }

@@ -65,6 +65,7 @@ const NewExpenseForm = (props) => {
       event.preventDefault();
 
       const expenseData = {
+        id : Math.random(),
         title   : enteredTitle,
         amount  : enteredAmount,
         date : new Date(enteredDate)
@@ -98,7 +99,9 @@ const NewExpenseForm = (props) => {
         </div>
       </div>
       <div className='new-expense__actions'>
+        <button type='button'>Cancel</button>
         <button type='submit'>Add Expense</button>
+       
       </div>
     </form>
   );

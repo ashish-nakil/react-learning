@@ -18,7 +18,7 @@ const ExpenseItem = (props) => {
      <FormattedDate date={props.date}> </FormattedDate>
       <div className="expense-item__description">
         <h2>{title}</h2>
-        <div className="expense-item__price">${props.amount}</div>
+        <div className="expense-item__price"> &#x20b9;{props.amount}</div>
       </div>
     </Card>
   );

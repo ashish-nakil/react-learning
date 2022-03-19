@@ -11,11 +11,9 @@ function App() {
   // ];
 
   const SaveExpenseHandler = (data) => {
-    setExpenses(
-      {
-        ...expenses,
-        data
-      });
+    setExpenses((prevExpenses) =>{
+      return [data, ...prevExpenses]
+    });
       console.log(data);
   }
 
